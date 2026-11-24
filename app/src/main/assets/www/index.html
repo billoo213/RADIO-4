@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Radio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+  try { if (localStorage.getItem('radio.night') === 'true') { document.documentElement.className = 'night'; document.body.className = 'night'; } } catch (e) {}
+</script>
+<div id="app">
+  <header>
+    <div class="brand">Radio<b>.</b></div>
+    <button id="themeBtn" class="icon" aria-label="Thème">◐</button>
+  </header>
+  <nav id="tabs"></nav>
+  <main id="content"></main>
+  <div id="mini"></div>
+</div>
+<div id="player">
+  <button id="pClose" class="icon" aria-label="Fermer">⌄</button>
+  <div class="who"><div class="logo" id="pLogo"></div><div id="pName"></div><div id="pSub"></div><div id="pTrack"></div></div>
+  <div id="pFlip"></div>
+  <div id="pDate"></div>
+  <div id="pStatus"></div>
+  <div id="pControls"></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
